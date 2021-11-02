@@ -19,10 +19,12 @@ export const Container = styled.div`
 	padding: ${({ padding }) => (padding ? padding : '0 15px')};
 `;
 
-export const Header = styled.h1`
-	color: ${({ color }) => (color ? color : 'blue')};
+export const Heading = styled.h1`
+	font-size: clamp(2.3rem, 6vw, 4.5rem);
+	margin-bottom: 2rem;
+	width: 100%;
+	letter-spacing: 4px;
 	text-align: center;
-	margin: 2rem;
 `;
 
 export const DEFAULT_DIV = styled.div`
@@ -47,7 +49,6 @@ export const Section = styled(DEFAULT_DIV)`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 6rem;
 `;
 
 export const Row = styled(DEFAULT_DIV)`
